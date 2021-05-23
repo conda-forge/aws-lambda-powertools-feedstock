@@ -1,5 +1,5 @@
 {% set name = "aws-lambda-powertools" %}
-{% set version = "1.16.0" %}
+{% set version = "1.16.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws_lambda_powertools-{{ version }}.tar.gz
-  sha256: bb6965e58a9cd92ac8ac7e9107c64da2bb7a02f7426a9e346116d411d392da70
+  sha256: c41ed40ccc4cd43257419d8298ab8b05ea4ede29ff185a596d1aa4480fed4f75
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - jmespath >=0.10.0,<0.11.0
     - python >=3.6.1,<4.0
   run_constrained:
-    - pydantic >=1.8.1,<2.0.0
+    - pydantic >=1.8.2,<1.9.0
 
 test:
   imports:
