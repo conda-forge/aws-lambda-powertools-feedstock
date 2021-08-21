@@ -3,7 +3,7 @@ About aws-lambda-powertools
 
 Home: https://awslabs.github.io/aws-lambda-powertools-python/
 
-Package license: MIT-0
+Package license: MIT-0 AND Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-lambda-powertools-feedstock/blob/master/LICENSE.txt)
 

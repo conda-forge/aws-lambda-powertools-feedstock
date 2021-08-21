@@ -1,5 +1,5 @@
 {% set name = "aws-lambda-powertools" %}
-{% set version = "1.19.0" %}
+{% set version = "1.20.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws_lambda_powertools-{{ version }}.tar.gz
-  sha256: b4615bb983b86bf3572edc5a5acc9f1c70013e4896943564f932bf5354bc8714
+  sha256: 1ca306d397b50ed696acb80cdf4818955fa82f2f7c804ef7df26e5beb5e119c1
 
 build:
   number: 0
@@ -22,12 +22,12 @@ requirements:
     - python >=3.6.1,<4.0
   run:
     - aws-xray-sdk >=2.8.0,<3.0.0
-    - boto3 >=1.12,<2.0
+    - boto3 >=1.18,<2.0
     - python-fastjsonschema >=2.14.5,<3.0.0
     - jmespath >=0.10.0,<0.11.0
     - python >=3.6.1,<4.0
   run_constrained:
-    - pydantic >=1.8.2,<1.9.0
+    - pydantic >=1.8.2,<2.0.0
 
 test:
   imports:
@@ -44,9 +44,11 @@ about:
   description: |
     A suite of Python utilities for AWS Lambda functions to ease adopting best practices such as tracing, structured logging,
     custom metrics, and more. ([AWS Lambda Powertools Java](https://github.com/awslabs/aws-lambda-powertools-java) is also available).
-  license: MIT-0
+  license: MIT-0 AND Apache-2.0
   license_family: MIT
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - THIRD-PARTY-LICENSES
   doc_url: https://awslabs.github.io/aws-lambda-powertools-python/api/
   dev_url: https://github.com/awslabs/aws-lambda-powertools-python
 
