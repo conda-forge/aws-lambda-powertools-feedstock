@@ -1,5 +1,5 @@
 {% set name = "aws-lambda-powertools" %}
-{% set version = "1.26.3" %}
+{% set version = "1.26.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws_lambda_powertools-{{ version }}.tar.gz
-  sha256: cbd511efe82fa2115f57c4f240cd6c37dfa721b9cebe005d8266fc8dddea6de9
+  sha256: 41cc6336832f26e06fd965c09d849fb9f3648a2624b651e28148a4cf83f29be3
 
 build:
   number: 0
@@ -21,6 +21,9 @@ requirements:
     - poetry >=0.12
     - python >=3.6.2,<4.0
   run:
+    - mypy-boto3-cloudwatch >=1.24.0,<2.0.0
+    - mypy-boto3-xray >=1.24.0,<2.0.0
+    - mypy_boto3_lambda >=1.24.0,<2.0.0
     - aws-xray-sdk >=2.8.0,<3.0.0
     - boto3 >=1.18,<2.0
     - python-fastjsonschema >=2.14.5,<3.0.0
