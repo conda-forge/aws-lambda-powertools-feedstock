@@ -19,7 +19,7 @@ requirements:
   host:
     - pip
     - poetry >=0.12
-    - poetry-core>=1.1.0a6
+    - poetry-core >=1.1.0a6
     - python >=3.7.4,<4.0
   run:
     - aws-xray-sdk >=2.8.0,<3.0.0
