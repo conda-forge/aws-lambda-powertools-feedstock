@@ -1,5 +1,5 @@
 {% set name = "aws-lambda-powertools" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws_lambda_powertools-{{ version }}.tar.gz
-  sha256: 9fe003143f2b530ded7fe4867f7b2b78b3a3401ea01042dd62f868ca66819f03
+  sha256: 11015bf54d5a69a2e2b6638809894a00c3f5a5a07718fbf97fcd3157ce5ea87d
 
 build:
   number: 0
@@ -18,21 +18,19 @@ build:
 requirements:
   host:
     - pip
-    - poetry >=0.12
-    - poetry-core >=1.1.0a6
+    - poetry-core >=1.3.2
     - python >=3.7.4,<4.0
   run:
+    - python >=3.7.4,<4.0
     - aws-xray-sdk >=2.8.0,<3.0.0
+    - pydantic >=1.8.2,<2.0.0
     - boto3 >=1.20.32,<1.21
     - python-fastjsonschema >=2.14.5,<3.0.0
-    - python >=3.7.4,<4.0
-  run_constrained:
-    - pydantic >=1.8.2,<2.0.0
+    - boto3
 
 test:
   imports:
     - aws_lambda_powertools
-    - aws_lambda_powertools.logging
   commands:
     - pip check
   requires:
