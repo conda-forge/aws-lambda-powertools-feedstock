@@ -1,5 +1,5 @@
 {% set name = "aws-lambda-powertools" %}
-{% set version = "2.3.1" %}
+{% set version = "2.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws_lambda_powertools-{{ version }}.tar.gz
-  sha256: 05661b2ed6d442008415519ffd2a61a39a5484b40d2ec46e10ad9a8a08e0e82e
+  sha256: a7084df09105770a032893b203347625d219f93a4e5f2b5ad4dd3a8942983cc7
 
 build:
   number: 0
