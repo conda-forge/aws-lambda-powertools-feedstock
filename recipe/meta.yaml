@@ -1,5 +1,5 @@
 {% set name = "aws-lambda-powertools" %}
-{% set version = "2.27.1" %}
+{% set version = "2.28.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws_lambda_powertools-{{ version }}.tar.gz
-  sha256: 4b13ec77d90f70e955680aac78df5322d5ce810c95272b6bb2173ba13fe72ffa
+  sha256: 500c6d74716549c769b5294562c0aa31faeb879bb25f7eae9e0b57242c0b5544
 
 build:
   noarch: python
@@ -34,7 +34,7 @@ requirements:
 # Extra: datamasking-aws-sdk
     - aws-encryption-sdk >=3.1.1,<4.0.0
   run_constrained:
-    - datadog-lambda >=4.77.0,<5.0.0
+    - datadog-lambda >=4.77,<6.0
     # Proprietary software
 
 test:
