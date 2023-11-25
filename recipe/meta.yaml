@@ -34,7 +34,7 @@ requirements:
 # Extra: datamasking-aws-sdk
     - aws-encryption-sdk >=3.1.1,<4.0.0
   run_constrained:
-    - datadog-lambda >=4.77.0,<5.0.0
+    - datadog-lambda >=4.77,<6.0
     # Proprietary software
 
 test:
