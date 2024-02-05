@@ -1,5 +1,5 @@
 {% set name = "aws-lambda-powertools" %}
-{% set version = "2.31.0" %}
+{% set version = "2.32.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws_lambda_powertools-{{ version }}.tar.gz
-  sha256: d628e32919379fde4cd238578bc47fcc60a43f742bd8daa68533bc5202eae378
+  sha256: 56422df30f633ad679abcc69b1b8a35212da18eecdc3fbaf5e6ca7fb8cc0e498
 
 build:
   noarch: python
@@ -30,9 +30,11 @@ requirements:
 # Extra: validation
     - python-fastjsonschema >=2.14.5,<3.0.0
 # Extra: aws-sdk
-    - boto3 >=1.20.32,<2.0.0
+    - boto3 >=1.26.164,<2.0.0
 # Extra: datamasking-aws-sdk
     - aws-encryption-sdk >=3.1.1,<4.0.0
+# Extra: redis
+    - redis-py >=4.4,<6.0
   run_constrained:
     - datadog-lambda >=4.77,<6.0
     # Proprietary software
