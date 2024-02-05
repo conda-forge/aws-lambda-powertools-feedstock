@@ -34,7 +34,7 @@ requirements:
 # Extra: datamasking-aws-sdk
     - aws-encryption-sdk >=3.1.1,<4.0.0
 # Extra: redis
-    - redis >=4.4,<6.0
+    - redis-py >=4.4,<6.0
   run_constrained:
     - datadog-lambda >=4.77,<6.0
     # Proprietary software
