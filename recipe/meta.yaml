@@ -1,5 +1,5 @@
 {% set name = "aws-lambda-powertools" %}
-{% set version = "2.36.0" %}
+{% set version = "2.37.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws_lambda_powertools-{{ version }}.tar.gz
-  sha256: 533a992aad6d088467a6e6f1fc86f1bfc3ecfe299282bef82f0e7f9934a91d45
+  sha256: a49dacba249e6db860d59314e4620648c1691727cf43e465e8f0907f699dc5e8
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.8,<4.0.0
-    - typing-extensions >=4.6.2,<5.0.0
+    - typing-extensions >=4.11.0,<5.0.0
 # Extra: parser
     - pydantic >=1.8.2,<2.0.0
 # Extra: tracer
