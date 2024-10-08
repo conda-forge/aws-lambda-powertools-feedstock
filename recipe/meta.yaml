@@ -1,5 +1,5 @@
 {% set name = "aws-lambda-powertools" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws_lambda_powertools-{{ version }}.tar.gz
-  sha256: b171e393858b7c45c08811e280304b9ff29e4fdc9b7b1aa896b49342451677f9
+  sha256: 758a8e5d668ae759051d064d542decff777d9c7a0a5612f0c05ab78fb6f20365
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - poetry-core >=1.3.2
     - pip
   run:
+    - typing_extensions >=4.11.0,<5.0.0
     - jmespath >=1.0.1,<2.0.0
     - python >=3.8,<4.0.0
     - typing-extensions >=4.11.0,<5.0.0
