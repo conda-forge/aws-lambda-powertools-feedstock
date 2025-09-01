@@ -16,7 +16,6 @@ Documentation: https://awslabs.github.io/aws-lambda-powertools-python/api/
 A suite of Python utilities for AWS Lambda functions to ease adopting best practices such as tracing, structured logging,
 custom metrics, and more. ([AWS Lambda Powertools Java](https://github.com/awslabs/aws-lambda-powertools-java) is also available).
 
-
 Current build status
 ====================
 
