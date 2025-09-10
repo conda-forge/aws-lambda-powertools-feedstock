@@ -7,7 +7,7 @@
 
 [project]
 name = "aws-lambda-powertools-feedstock"
-version = "3.52.1"  # conda-smithy version used to generate this file
+version = "3.52.2"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/aws-lambda-powertools-feedstock"
 authors = ["@conda-forge/aws-lambda-powertools"]
 channels = ["conda-forge"]
