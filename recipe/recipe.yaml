@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: aws-lambda-powertools
-  version: "3.28.0"
+  version: "3.29.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/aws_lambda_powertools-${{ version }}.tar.gz
-  sha256: 8849bc4fb01562aa13f1530a456626192256081ce2cfdf0cb0836ad6cba3c6b1
+  sha256: a81ce122356343878e095a11bd38f3e9a70f3fa0fea57b10b327d1e8dfe82b6e
 
 build:
   number: 0
